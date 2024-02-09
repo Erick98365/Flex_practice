@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-element{
+    background-color: rgb(86, 99, 86);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+}
+
+.logo-element{
+    position: relative;
+    display:flex;
+    align-items: center;
+    left: 5%;
+}
+
+.nav-element {
+    position: relative;
+    display:flex;
+    align-items: center;
+    left: 50%;
+    width: 400px;
+}
