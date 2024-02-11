@@ -3,16 +3,32 @@
     padding: 0;
 }
 
+body{
+    background-color: rgba(59, 59, 59, 1);
+}
+
+section{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 .header-element{
-    background-color: rgb(86, 99, 86);
     position: fixed;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 70px;
+    background: #ffffff;
+    z-index: 2;
 }
 
-.logo-element{
+.title-element{
     position: relative;
     display:flex;
     align-items: center;
@@ -23,6 +39,112 @@
     position: relative;
     display:flex;
     align-items: center;
-    left: 50%;
+    justify-content: center;
+    left: 60%;
     width: 400px;
+}
+
+.ul-element{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.ul-element > l1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+}
+
+.ul-element > l1 > a {
+    text-decoration: none;
+    color: black;
+    top: 200px;
+}
+
+.card-element{
+    background-color: rgb(251, 222, 222);
+    margin: 24px;
+    width: 45%;
+    height: 65%;
+}
+
+#card-one{
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+#card-two{
+    height: 25%;
+}
+
+#card-four{
+    position: relative;
+    top: -165px;
+    height: 86%;
+}
+#card-five{
+    position: relative;
+    top: -165px;
+    width: 100%;
+    height: 50%;
+}
+footer {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 20px;
+    z-index: 3;
+}
+
+.image-one{
+    max-width: 30%;
+    height: auto;
+    position: relative;
+    right: 5%;
+}
+
+.content-card-one{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+.content-card-one > p {
+    position: relative;
+    left: 5%;
+    font-size: 10px;
+}
+
+.content-card-two{
+    position: relative;
+    top: 40px;
+    left:2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 50%;
+}
+
+.content-card-two > p {
+    font-size: 10px;
+    text-align: justify;
+}
+
+.image-two{
+    max-width: 40%;
+    height: auto;
+    position: relative;
+    left:55%;
+    top:-75px;
 }
